@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/p3background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/introQuestion"
+            android:text="@string/rhetorical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionsTextStyle"
+                    android:text="@string/q1" />
+
+                <Button
+                    style="@style/DidYouKnow"
+                    android:onClick="didYouKnow1"
+                    android:text="@string/did_you_know" />
+
+                <CheckBox
+                    android:id="@+id/q1_check_box_a"
+                    style="@style/checkBoxes"
+                    android:text="@string/q1_a" />
+
+                <CheckBox
+                    android:id="@+id/q1_check_box_b"
+                    style="@style/checkBoxes"
+                    android:text="@string/q1_b" />
+
+                <CheckBox
+                    android:id="@+id/q1_check_box_c"
+                    style="@style/checkBoxes"
+                    android:text="@string/q1_c" />
+
+                <CheckBox
+                    android:id="@+id/q1_check_box_d"
+                    style="@style/checkBoxes"
+                    android:text="@string/q1_d" />
+
+                <CheckBox
+                    android:id="@+id/q1_check_box_e"
+                    style="@style/checkBoxes"
+                    android:text="@string/q1_e" />
+
+                <Button
+                    android:id="@+id/q1_save"
+                    style="@style/Save"
+                    android:layout_marginTop="8dp"
+                    android:onClick="saveQ1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionsTextStyle"
+                    android:text="@string/q2" />
+
+                <Button
+                    style="@style/DidYouKnow"
+                    android:onClick="didYouKnow2"
+                    android:text="@string/did_you_know" />
+
+                <RadioGroup style="@style/Radio">
+
+                    <RadioButton
+                        android:id="@+id/true_radio_button"
+                        style="@style/RadioButton"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/accurate" />
+
+                    <RadioButton
+                        android:id="@+id/false_radio_button"
+                        style="@style/RadioButton"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/inaccurate" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/q2_button"
+                    style="@style/Save"
+                    android:layout_marginTop="8dp"
+                    android:onClick="saveQ2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionsTextStyle"
+                    android:text="@string/q3" />
+
+                <Button
+                    style="@style/DidYouKnow"
+                    android:onClick="didYouKnow3"
+                    android:text="@string/did_you_know" />
+
+                <EditText
+                    android:id="@+id/answerQ3"
+                    style="@style/editText"
+                    android:hint="@string/editText" />
+
+                <Button
+                    android:id="@+id/q3_button"
+                    style="@style/Save"
+                    android:layout_marginTop="8dp"
+                    android:onClick="saveQ3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionsTextStyle"
+                    android:text="@string/q4" />
+
+                <Button
+                    style="@style/DidYouKnow"
+                    android:onClick="didYouKnow4"
+                    android:text="@string/did_you_know" />
+
+                <CheckBox
+                    android:id="@+id/q4_check_box_a"
+                    style="@style/checkBoxes"
+                    android:text="@string/q4_a" />
+
+                <CheckBox
+                    android:id="@+id/q4_check_box_b"
+                    style="@style/checkBoxes"
+                    android:text="@string/q4_b" />
+
+                <CheckBox
+                    android:id="@+id/q4_check_box_c"
+                    style="@style/checkBoxes"
+                    android:text="@string/q4_c" />
+
+                <CheckBox
+                    android:id="@+id/q4_check_box_d"
+                    style="@style/checkBoxes"
+                    android:text="@string/q4_d" />
+
+                <CheckBox
+                    android:id="@+id/q4_check_box_e"
+                    style="@style/checkBoxes"
+                    android:text="@string/q4_e" />
+
+                <Button
+                    android:id="@+id/q4_save"
+                    style="@style/Save"
+                    android:layout_marginTop="8dp"
+                    android:onClick="saveQ4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionsTextStyle"
+                    android:text="@string/q5" />
+
+                <Button
+                    style="@style/DidYouKnow"
+                    android:onClick="didYouKnow5"
+                    android:text="@string/did_you_know" />
+
+                <RadioGroup style="@style/Radio">
+
+                    <RadioButton
+                        android:id="@+id/yes_radio_button"
+                        style="@style/RadioButton"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/affirmative" />
+
+                    <RadioButton
+                        android:id="@+id/no_radio_button"
+                        style="@style/RadioButton"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/negative" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/q5_button"
+                    style="@style/Save"
+                    android:layout_marginTop="8dp"
+                    android:onClick="saveQ5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionsTextStyle"
+                    android:text="@string/q6" />
+
+                <Button
+                    style="@style/DidYouKnow"
+                    android:onClick="didYouKnow6"
+                    android:text="@string/did_you_know" />
+
+                <EditText
+                    android:id="@+id/answerQ6"
+                    style="@style/editText"
+                    android:hint="@string/editText" />
+
+                <Button
+                    android:id="@+id/q6_button"
+                    style="@style/Save"
+                    android:layout_marginTop="8dp"
+                    android:onClick="saveQ6" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submit_button"
+                style="@style/SubmitQuiz"
+                android:onClick="SubmitQuiz" />
+
+            <TextView
+                android:id="@+id/submit_text"
+                style="@style/gradeSubmit" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/restart"
+            android:text="@string/reset" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
